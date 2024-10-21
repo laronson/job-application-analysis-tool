@@ -6,3 +6,4 @@ document_assets
 .vscode
 generated_reports
 .env
+.DS_STORE
