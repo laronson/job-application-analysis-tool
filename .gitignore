@@ -1,0 +1,8 @@
+.venv
+venv
+__pycache__
+build
+document_assets
+.vscode
+generated_reports
+.env

@@ -1,0 +1,21 @@
+[project]
+name = "application-analysis-tool"
+version = "0.0.1"
+authors = [{ name = "Leonard Aronson", email = "laronson21@gmail.com" }]
+description = "Daily search for job openings and analysis against my profile to help enahnce my application"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "black",
+  "requests",
+  "langchain",
+  "langchain_community",
+  "langchain-openai",
+  'python-dotenv',
+]
+
+[tool.distutils.egg_info]
+egg_base = "build"
+
+[tool.black]
+line-length = 120
