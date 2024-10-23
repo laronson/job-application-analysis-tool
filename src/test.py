@@ -1,4 +1,4 @@
-from search.apple import AppleRequester
+from search_jobs.apple import AppleRequester
 from models.openai import ChatGPT
 from documents import Resume, CoverLetter
 from dotenv import load_dotenv

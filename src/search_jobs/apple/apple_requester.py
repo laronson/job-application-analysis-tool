@@ -1,4 +1,5 @@
-from ..base import Requester, JobDescription
+from ..base import Requester
+from ..models import JobDescription
 import requests
 from typing import TypedDict, Dict, List, Any
 from .config import apple_config, location_transform

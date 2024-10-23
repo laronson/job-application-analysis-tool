@@ -1,4 +1,3 @@
-from abc import ABC
 from typing import TypedDict
 from langchain_core.language_models import BaseChatModel
 from langchain_core.output_parsers import StrOutputParser
@@ -11,7 +10,7 @@ class ModelConfig(TypedDict):
     parser: StrOutputParser
 
 
-class BaseModel(ABC):
+class BaseModel:
     def __init__(self, config: ModelConfig):
         self.model = config.get("model")
         self.parser = config.get("parser")
