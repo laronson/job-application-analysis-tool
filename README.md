@@ -9,8 +9,6 @@
     - Provide link to application
 - Email a report to my email with the findings of scanning and analyzing on a daily basis
 
- 
-
 ## Implementation Details & Tasks
 
 ### Scanning Functionality
@@ -64,6 +62,13 @@
         - *Pros:* This could allow for a bit more flexibility in how I optimize each indevidual prompt and would make the work to do so much more module.  Could potentially look into using DSPy for help for optimization :).<br>
         - *Cons:* This method would certainly be more expensive for a single call method.
 
+    - **Evaluation Taxonomy** - Need to come up with a standardized set of criteria to grade any given response.  Some categories that I could use off the top of my head are:
+        - Matching key terms that appear in the job description but do not appear in my resume or cover letter to see if the model is responding with an analysis that includes skills that the job description asks for but I do not have [prbably will be numerical]
+        - Does the model include any of the skills that are directly referenced in my resume or cover as things I could improve on based on the job description? [yes/no]
+        - Does the model format the generated response correctly. [yes/no]
+        - Does the model include all of the job description information correctly (job title, company, job location ect..). [yes/no]
+        - The model will be generating a "match number" between the job description and the resume/cover letter.  I could use job descriptions for jobs that I have been gotten offers for in the past as a testing set to see if the model gives me a high likelyhood for those jobs.  This would be a small testing set but may be valuable if I can avoid overfitting.
+        -   
 
 - **Possible improvement tasks:**
     - Look into [GPT’s Batch API](https://platform.openai.com/docs/guides/batch) to cut costs.
